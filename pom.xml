@@ -4,13 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ruoyi</groupId>
-    <artifactId>ruoyi</artifactId>
-    <version>3.4.0</version>
-
-    <name>ruoyi</name>
-    <url>https://github.com/lerry903/RuoYi</url>
-    <description>若依管理系统</description>
+    <groupId>com.jd.health.qa</groupId>
+    <artifactId>health</artifactId>
+    <version>1.0.0</version>
+    <name>health</name>
 
     <properties>
         <ruoyi.version>3.4.0</ruoyi.version>
@@ -28,6 +25,7 @@
         <oshi.version>3.9.1</oshi.version>
         <lombok.version>1.18.4</lombok.version>
         <hutool.version>4.5.10</hutool.version>
+        <zookeeper.dangdang.version>3.2.4-RELEASE</zookeeper.dangdang.version>
     </properties>
 
     <dependencyManagement>
@@ -44,12 +42,11 @@
     </dependencyManagement>
 
     <modules>
-        <module>ruoyi-admin</module>
-        <module>ruoyi-framework</module>
-        <module>ruoyi-system</module>
-        <module>ruoyi-quartz</module>
-        <module>ruoyi-generator</module>
-        <module>ruoyi-common</module>
+        <module>health-jd-qa-common</module>
+        <module>health-jd-qa-framework</module>
+        <module>health-jd-qa-quartz</module>
+        <module>health-jd-qa-system</module>
+        <module>health-jd-qa-web</module>
     </modules>
     <packaging>pom</packaging>
 
